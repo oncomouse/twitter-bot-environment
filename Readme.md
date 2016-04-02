@@ -1,4 +1,4 @@
-# twitter-bot-init
+# twitter-bot-environment
 
 This library is meant to be a simple means of setting up a bot-by-bot authorization environment for Twitter. 
 
