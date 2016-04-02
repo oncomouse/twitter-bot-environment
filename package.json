@@ -1,0 +1,22 @@
+{
+  "name": "twitter-bot-environment",
+  "version": "1.0.0",
+  "description": "Establish an environment for Twitter bots.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oncomouse/twitter-bot-environment.git"
+  },
+  "author": "Andrew Pilsch <apilsch@tamu.edu> (http://andrew.pilsch.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oncomouse/twitter-bot-environment/issues"
+  },
+  "homepage": "https://github.com/oncomouse/twitter-bot-environment#readme",
+  "dependencies": {
+    "lodash": "^4.7.0"
+  }
+}
