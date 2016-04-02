@@ -10,7 +10,7 @@ var BotEnvironment = function(props) {
 	
 	this.props = _.assignInWith({}, props, this.default_props , (o,s) => { return _.isUndefined(o) ? s : o; });
 	
-	if(this.props.auth_file[0] !== '/') {
+	if(this.props.auth_file[0] !== '/')) {
 		this.props.auth_file = process.cwd() + '/' + this.props.auth_file
 	}
 	
