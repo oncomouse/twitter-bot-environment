@@ -10,14 +10,14 @@ var BotEnvironment = function(props) {
 	
 	this.props = _.assignInWith({}, props, this.default_props , (o,s) => { return _.isUndefined(o) ? s : o; });
 	
-	if(this.props.auth_file[0] !== '/')) {
+	if(this.props.auth_file[0] !== '/') {
 		this.props.auth_file = process.cwd() + '/' + this.props.auth_file
 	}
 	
 	this.auth = {};
 	
 	var auth;
-	if(fs.existsSync(this.props.auth_file) {
+	if(fs.existsSync(this.props.auth_file)) {
 		auth = require(this.props.auth_file);
 	} else {
 		console.log('Did not find ' + this.props.auth_file + ' (bot may not run properly).');
