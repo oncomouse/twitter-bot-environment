@@ -1,6 +1,6 @@
 {
   "name": "twitter-bot-environment",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Establish an environment for Twitter bots.",
   "main": "index.js",
   "scripts": {
