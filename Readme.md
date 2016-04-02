@@ -8,7 +8,7 @@ The library looks for a `auth.js` file in the root of your project (or can be ch
 
 It's best to add `auth.js` to your `.gitignore` file.
 
-```
+```javascript
 module.exports = {
 	CONSUMER_KEY: 'sample consumer key',
 	CONSUMER_SECRET: 'sample consumer secret',
@@ -19,7 +19,7 @@ module.exports = {
 
 ## Usage
 
-```
+```javascript
 var BotEnvironment = require('twitter-bot-environment');
 var twitter = require('twode');
 
