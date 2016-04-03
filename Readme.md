@@ -10,10 +10,10 @@ It's best to add `auth.js` to your `.gitignore` file.
 
 ```javascript
 module.exports = {
-	CONSUMER_KEY: 'sample consumer key',
-	CONSUMER_SECRET: 'sample consumer secret',
-	ACCESS_TOKEN_KEY: 'sample access token key',
-	ACCESS_TOKEN_SECRET: 'sample access token secret'
+	consumer_key: 'sample consumer key',
+	consumer_secret: 'sample consumer secret',
+	access_token_key: 'sample access token key',
+	access_token_secret: 'sample access token secret'
 };
 ```
 

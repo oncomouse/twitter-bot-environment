@@ -28,17 +28,17 @@ var BotEnvironment = function(props) {
 	}
 	
 	// Load keys from environment variables if they are missing in file:
-	if(!_.has(auth, 'CONSUMER_KEY')) {
-		this.auth['CONSUMER_KEY'] = process.env.CONSUMER_KEY;
+	if(!_.has(auth, 'consumer_key')) {
+		this.auth['consumer_key'] = process.env.CONSUMER_KEY;
 	}
-	if(!_.has(auth, 'CONSUMER_SECRET')) {
-		this.auth['CONSUMER_SECRET'] = process.env.CONSUMER_SECRET;
+	if(!_.has(auth, 'consumer_secret')) {
+		this.auth['consumer_secret'] = process.env.CONSUMER_SECRET;
 	}
-	if(!_.has(auth, 'ACCESS_TOKEN_KEY')) {
-		this.auth['ACCESS_TOKEN_KEY'] = process.env.ACCESS_TOKEN_KEY;
+	if(!_.has(auth, 'access_token_key')) {
+		this.auth['access_token_key'] = process.env.ACCESS_TOKEN_KEY;
 	}
-	if(!_.has(auth, 'ACCESS_TOKEN_SECRET')) {
-		this.auth['ACCESS_TOKEN_SECRET'] = process.env.ACCESS_TOKEN_SECRET;
+	if(!_.has(auth, 'access_token_secret')) {
+		this.auth['access_token_secret'] = process.env.ACCESS_TOKEN_SECRET;
 	}
 	
 	console.log('Environment has been set up.')
@@ -46,10 +46,10 @@ var BotEnvironment = function(props) {
 
 BotEnvironment.prototype.getEnvironment = function() {
 	return {
-		CONSUMER_KEY: this.auth['CONSUMER_KEY'],
-		CONSUMER_SECRET: this.auth['CONSUMER_SECRET'],
-		ACCESS_TOKEN_KEY: this.auth['ACCESS_TOKEN_KEY'],
-		ACCESS_TOKEN_SECRET: this.auth['ACCESS_TOKEN_SECRET']
+		consumer_key: this.auth['consumer_key'],
+		consumer_secret: this.auth['consumer_secret'],
+		access_token_key: this.auth['access_token_key'],
+		access_token_secret: this.auth['access_token_secret']
 	};
 }
 
